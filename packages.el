@@ -47,8 +47,7 @@
 
 (defun japanese/init-ddskk ()
   (use-package ddskk
-    :defer t
-    :bind (("C-x j" . skk-mode))))
+    :defer t))
 
 (defun japanese/init-japanese-holidays ()
   (use-package japanese-holidays
