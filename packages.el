@@ -46,9 +46,11 @@
     :config (avy-migemo-mode 1)))
 
 (defun japanese/init-ddskk ()
-  (use-package ddskk
-    :defer t
-    :bind (("C-x j" . skk-mode))))
+    (cond
+     ((eq system-type 'darwin)
+      (use-package ddskk
+        :defer t
+        :bind (("C-M-¥" . skk-mode))))))
 
 (defun japanese/init-japanese-holidays ()
   (use-package japanese-holidays
