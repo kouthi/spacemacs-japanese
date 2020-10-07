@@ -50,7 +50,7 @@
      ((eq system-type 'darwin)
       (use-package ddskk
         :defer t
-        :bind (("C-:" . skk-mode))))))
+        :bind (("C-SPC" . skk-mode))))))
 
 (defun japanese/init-japanese-holidays ()
   (use-package japanese-holidays
